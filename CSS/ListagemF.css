@@ -1,0 +1,39 @@
+
+
+td.fitwidth {
+    position: relative;
+    width: 80vh;
+    text-align: center;
+    border-radius: 7px;
+}
+td.NumerosTD {
+    position: relative;
+    width: 100px;
+    text-align:center;
+    border-radius: 7px; 
+}
+.thMenu{
+    font: bold;   
+    border-radius: 7px;
+}
+.thClick{
+    font: bold;   
+    border-radius: 7px;
+    cursor: pointer;
+}
+.thClick:hover{
+    background: rgba(0, 0, 0, 0.219);
+}
+.btn_excluirC{
+    position: relative;
+    width: 50px;
+    text-align:center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.btn_excluirC:hover{
+    background: rgba(0, 0, 0, 0.13);
+}
+.btn_Pes{
+    cursor: pointer;
+}

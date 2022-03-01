@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Cadastro.css">
+        <script 
+        language="JAVASCRIPT"
+        type="text/JAVASCRIPT"
+        src="JS/ScriptG.js"
+        ></script>
+        <title>Cadastro de funcionários</title>
+    </head>
+    <body onload="GerarSenha()">
+        <div id="msgemail"></div>
+        <form name="frm_cadastro" method="post" id="frm_cadastro">        
+            <fieldset>
+                <center>
+                    <b><legend>DADOS DO FUNCIONÁRIO</legend></b>
+                    <br><br>
+                    <input type="text" name="txt_registroN" maxlength="5" placeholder="N° REGISTRO" class="txt_entradaDados" onkeypress="return verifica_simbolo(event)"><br><br>
+                    <input type="text" maxlength="50" placeholder="NOME"  name="txt_nome" class="txt_entradaDados"><br><br>
+                    <input type="email" autocomplete="none" maxlength="50" placeholder="E-MAIL" id="txt_email"  name="txt_email" class="txt_entradaDados" onblur="checarEmail(frm_cadastro.txt_email)">
+
+                    <br><br>
+                    <input id="txt_password" type="password" placeholder="SENHA" name="txt_senha" class="txt_entradaDados" autocomplete="off" maxlength="23" readonly>
+                    
+                    <div id="MostrarTexto">
+                        <div>
+                            <img src="IMGS/IconeCopia.png" id="copiar" onmouseout="EsconderElemento()" onmouseover="RevelaElemento()"  onclick="Copiar()">
+                        </div>
+                        
+                        <div id="TextoApresentado">
+                            <span id="TituloCopiar"></span>
+                        </div>
+                    </div>
+                    
+                    <img src="IMGS/eyeShow.png" id="imgShow" onclick="MostrarSenha()">
+                    <br><br>       
+                    <input autocomplete="off" type="text" id="txt_cpf" maxlength="14" placeholder="CPF" name="txt_cpf" class="txt_entradaDados" onblur="ValidacaoQtd()" onkeydown="return MascaraCPF(event)" onkeypress="return verifica_simbolo(event)"><br><br>
+                    <input autocomplete="off" type="text" id="txt_tel" maxlength="14" placeholder="Telefone celular" name="txt_numerotel" class="txt_entradaDados" onblur="ValidacaoQtdTEL()" onkeydown=" return MascaraTel(event)" onkeypress="return verifica_simbolo(event)"><br><br>
+                    NIVEL DE ACESSO:
+                    <select name="txt_acess">
+                        <option>USÚARIO PADRÃO</option>
+                        <option>ADMINISTRADOR</option>
+                    </select>
+                    <br><br>
+                    DATA DE ADMISSÃO:
+                    <input type="date" maxlength="10" name="txt_data" size="20"><br><br>
+                    CARGO:
+                    <select name="txt_cargo">
+                        <option>Desenvolvedor de sistemas</option>
+                        <option>Análista de sistemas</option>
+                        <option>Segurança da informação</option>
+                        <option>Desenvolvedor mobile</option>
+                        <option>Designer UX</option>
+                        <option>Designer UI</option>
+                    </select>
+                    <br><br>             
+                    <input type="text" maxlength="4" size="10" name="txt_qtdS" placeholder="QUANTIDADE DE SALÁRIOS MINIMOS" class="txt_entradaDados" onkeypress="return verifica_simbolo(event)">
+                </center>
+            </fieldset><br><br>
+            <center>
+                <input maxlength="3" type="submit" name="btn_cadastro" value="CADASTRAR" class="btn_action" onclick="verifica_email()">
+                <a href="PHP/listagem.php"><input type="button" name="btn_listagem" value="DEMONSTRATIVO" class="btn_action"></a>
+            </center>
+        </form>
+    </body>
+</html>

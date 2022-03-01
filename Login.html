@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Login.css">
+       
+        <script 
+        language="JAVASCRIPT"
+        type="text/JAVASCRIPT"
+        src="JS/ScriptG.js"
+        ></script>
+        <title>LOGIN</title>
+    </head>
+    <body>
+        <form name="frm_login" method="POST" >
+            <div id="msgerro"></div>
+            <div id="CLogin">
+                <input id="txt_registro" autocomplete="off" type="text" placeholder="N° REGISTRO" name="txt_registroNumero" class="text_class" maxlength="5" onkeypress="return verifica_simbolo(event)" id="txt_Codigo"><br>
+                <input id="txt_password" type="password" placeholder="SENHA" name="txt_senha" class="text_class" autocomplete="off" maxlength="23">
+                <img src="IMGS/eyeShow.png" id="imgShow" onclick="MostrarSenha()">
+                <br>
+                <input type="submit" value="LOGIN" name="btn_login" id="btn_login" onclick="document.frm_login.action='PHP/login.php'">
+            </div>
+            <span id="txt_RAMAL">RAMAL T.I: 4521</span>
+        </form>
+    </body>
+</html>

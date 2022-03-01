@@ -1,0 +1,97 @@
+body{
+    background-color: white;
+}
+#frm_cadastro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15%;
+    margin-left: -50%;
+    width: 100%;
+}
+.btn_action{
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 25px;
+    cursor: pointer;
+    font: bolder;
+    background-color: rgb(139, 139, 192);
+    border-radius: 6px;
+    border: none;
+    filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.4));
+
+}
+.btn_action:hover{
+    background-color: rgb(100, 100, 190);
+    filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.7));
+}
+.txt_entradaDados{
+    background:none;
+    border: none;
+    border-bottom: 2px solid rgb(150,150,150);
+    width: 300px;
+}
+.txt_entradaDados:focus{
+    border: none;
+    border-bottom: 2px solid rgb(150,150,150);
+    outline: 0;
+}
+#imgShow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -88px;
+    margin-left: 130px;
+    border:2px solid rgba(0, 0, 0, 0.589);
+    border-radius: 8px;
+    width: 20px;
+    cursor: pointer;
+}
+#imgShow:hover{
+    border:2px solid black;
+}
+#msgemail{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    top: 10%;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -100px;
+    position: absolute;
+    width: 200px;
+}
+
+
+#copiar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -96px;
+    margin-left: 160px;
+
+    width: 22px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+#copiar:hover{
+    background: white;
+    border: 2px solid rgb(80, 57, 57);
+}
+#TextoApresentado{
+    position: absolute;
+    width: 150px;
+    height: 17px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -91px;
+    margin-left: 200px;
+
+    color: black;
+    opacity: 1;
+}

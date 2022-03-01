@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(94, 110, 121);
+}
+#CLogin{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    margin-left: 0px;
+    margin-top: -130px;
+    height: 300px;
+    width: 96%;
+    border-radius: 7px;    
+}
+
+.text_class{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -150px;
+    width: 300px;
+    height: 36px;
+    color: white;
+    background-color: rgba(112, 126, 140, 0.822);
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    filter: drop-shadow(7px 5px 7px rgba(0, 0, 0, 0.5));
+    outline-width: 0;
+}
+#imgShow{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: 5px;
+    margin-left: 115px;
+    border:2px solid rgba(0, 0, 0, 0.589);
+    border-radius: 50px;
+    width: 22px;
+    cursor: pointer;
+}
+#imgShow:hover{
+    border:2px solid black;
+}
+
+.text_class:focus{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.596);
+    filter: drop-shadow(7px 5px 7px rgba(0, 0, 0, 0.7));
+}
+::placeholder{
+    color: white;
+    text-align: center;
+}
+#btn_login{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    margin-top: 15px;
+    margin-left: -150px;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    font: bolder;
+    font-size: 17px;
+    background-color: rgb(139, 139, 192);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.4));
+}
+#btn_login:hover{
+    background-color: rgb(100, 100, 190);
+    filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.7));
+}
+#txt_RAMAL{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.7));
+}
